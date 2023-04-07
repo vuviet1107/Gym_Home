@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 class AppDimens {
   static double height = MediaQuery.of(Get.context!).size.height;
   static double width = MediaQuery.of(Get.context!).size.width;
+
   // static final double horizontalPadding = 20.w;
   // static final double defaultPadding = 16.0.w;
   //Padding
@@ -27,6 +28,7 @@ class AppDimens {
   static const double lineHeight24 = 24.0;
   static const double lineHeight28 = 28.0;
   static const double lineHeight32 = 32.0;
+
   //SizeText
   static const textSize10 = 10.0;
   static const textSize12 = 12.0;
@@ -39,6 +41,7 @@ class AppDimens {
   static const textSize24 = 24.0;
   static const textSize28 = 28.0;
   static const textSize30 = 30.0;
+
   //Height
   // static final height10 = 10.h;
   // static final height12 = 12.h;
@@ -53,6 +56,10 @@ class AppDimens {
   // static final height30 = 30.h;
   // static final height130 = 130.h;
 
-  static const double height61 = 61;
+  ///Width
+  static const double width4 = 4;
 
+  ///Height
+  static const double height179 = 179;
+  static const double height61 = 61;
 }

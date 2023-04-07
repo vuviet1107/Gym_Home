@@ -12,9 +12,9 @@ class AppStyles {
 
   static TextStyle textW300(BuildContext context,
       {@required double? size,
-        FontStyle? fontStyle,
-        Color? color = AppColors.blackColor,
-        double? lineHeight = AppDimens.lineHeight16}) {
+      FontStyle? fontStyle,
+      Color? color = AppColors.black1B232A,
+      double? lineHeight = AppDimens.lineHeight16}) {
     var height = 1.0;
     if (lineHeight! > size!) {
       height = lineHeight / size;
@@ -22,11 +22,12 @@ class AppStyles {
     return Theme.of(context).textTheme.subtitle1!.copyWith(
         fontSize: size, fontWeight: w300, color: color, height: height);
   }
+
   static TextStyle textW400(BuildContext context,
       {@required double? size,
-        FontStyle? fontStyle,
-        Color? color = AppColors.blackColor,
-        double? lineHeight = AppDimens.lineHeight16}) {
+      FontStyle? fontStyle,
+      Color? color = AppColors.black1B232A,
+      double? lineHeight = AppDimens.lineHeight16}) {
     var height = 1.0;
     if (lineHeight! > size!) {
       height = lineHeight / size;
@@ -37,9 +38,9 @@ class AppStyles {
 
   static TextStyle textW500(BuildContext context,
       {@required double? size,
-        FontStyle? fontStyle,
-        Color? color = AppColors.blackColor,
-        double? lineHeight = AppDimens.lineHeight16}) {
+      FontStyle? fontStyle,
+      Color? color = AppColors.black1B232A,
+      double? lineHeight = AppDimens.lineHeight16}) {
     var height = 1.0;
     if (lineHeight! > size!) {
       height = lineHeight / size;
@@ -50,9 +51,9 @@ class AppStyles {
 
   static TextStyle textW600(BuildContext context,
       {@required double? size,
-        FontStyle? fontStyle,
-        Color? color = AppColors.blackColor,
-        double? lineHeight = AppDimens.lineHeight16}) {
+      FontStyle? fontStyle,
+      Color? color = AppColors.black1B232A,
+      double? lineHeight = AppDimens.lineHeight16}) {
     var height = 1.0;
     if (lineHeight! > size!) {
       height = lineHeight / size;
@@ -63,9 +64,9 @@ class AppStyles {
 
   static TextStyle textW700(BuildContext context,
       {@required double? size,
-        FontStyle? fontStyle,
-        Color? color = AppColors.blackColor,
-        double? lineHeight = AppDimens.lineHeight16}) {
+      FontStyle? fontStyle,
+      Color? color = AppColors.black1B232A,
+      double? lineHeight = AppDimens.lineHeight16}) {
     var height = 1.0;
     if (lineHeight! > size!) {
       height = lineHeight / size;
@@ -76,9 +77,9 @@ class AppStyles {
 
   static TextStyle textW800(BuildContext context,
       {@required double? size,
-        FontStyle? fontStyle,
-        Color? color = AppColors.blackColor,
-        double? lineHeight = AppDimens.lineHeight16}) {
+      FontStyle? fontStyle,
+      Color? color = AppColors.black1B232A,
+      double? lineHeight = AppDimens.lineHeight16}) {
     var height = 1.0;
     if (lineHeight! > size!) {
       height = lineHeight / size;
