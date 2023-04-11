@@ -2,6 +2,8 @@ import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:good_boy/modules/home/bindings/home_binding.dart';
 
 import '../modules/home/views/home_view.dart';
+import '../modules/login/bindings/login_binding.dart';
+import '../modules/login/views/login_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
 
@@ -18,6 +20,11 @@ class AppPages {
       name: _Paths.SPLASH,
       page: () => const SplashView(),
       binding: SplashBinding(),
+    ),
+    GetPage(
+      name: _Paths.LOGIN,
+      page: () => const LoginView(),
+      binding: LoginBinding(),
     ),
     GetPage(
       name: _Paths.HOME,

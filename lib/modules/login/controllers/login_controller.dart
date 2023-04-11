@@ -1,14 +1,12 @@
 import 'dart:async';
 import 'package:get/get.dart';
 
-import '../../../routes/app_pages.dart';
-
-class SplashController extends GetxController {
+class LoginController extends GetxController {
   final count = 0.obs;
   @override
   void onInit() {
     super.onInit();
-    Timer.periodic( const Duration(seconds: 5), ((timer) {
+    Timer.periodic(Duration(seconds: 1), ((timer) {
       navigator();
       timer.cancel();
     }));
@@ -27,14 +25,14 @@ class SplashController extends GetxController {
   void increment() => count.value++;
   navigator() {
     // if (AppState.authenticated) {
-      Get.offAllNamed(
-        Routes.LOGIN,
-        arguments: {
-          'showPopup': true,
-        },
-      );
+    //   Get.offAllNamed(
+    //     Routes.DASHBOARD,
+    //     arguments: {
+    //       'showPopup': true,
+    //     },
+    //   );
     // } else {
-    //   Get.offAllNamed(Routes.HOME);
+      // Get.offAllNamed(Routes.LOGIN);
     // }
   }
 }

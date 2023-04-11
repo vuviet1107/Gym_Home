@@ -62,13 +62,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_gif:
-    dependency: "direct dev"
-    description:
-      name: flutter_gif
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.0.4"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -94,7 +87,7 @@ packages:
     source: sdk
     version: "0.0.0"
   get:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: get
       url: "https://pub.dartlang.org"
@@ -177,6 +170,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.4"
+  remixicon:
+    dependency: "direct main"
+    description:
+      name: remixicon
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -232,7 +232,7 @@ packages:
     source: hosted
     version: "2.1.2"
   video_player:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: video_player
       url: "https://pub.dartlang.org"
