@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:good_boy/constants/app_colors.dart';
 import 'package:good_boy/constants/app_styles.dart';
@@ -11,6 +10,8 @@ class AuthButton extends StatelessWidget {
     this.borderRadius,
     this.buttonColor,
     this.horizontal,
+    this.width,
+    this.height,
   }) : super(key: key);
 
   final String text;
@@ -18,12 +19,16 @@ class AuthButton extends StatelessWidget {
   final double? horizontal;
   final VoidCallback button;
   final BorderRadiusGeometry? borderRadius;
+  final double? width;
+  final double? height;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: button,
       child: Container(
+        width: width,
+        height: height,
         padding:
             EdgeInsets.symmetric(horizontal: horizontal ?? 16, vertical: 16),
         decoration: BoxDecoration(

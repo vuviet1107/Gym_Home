@@ -40,6 +40,7 @@ dependencies:
   get: ^4.6.5
   video_player: ^2.6.1
   remixicon: ^1.0.0
+  flutter_screenutil: ^5.7.0
 
 dev_dependencies:
   flutter_test:
