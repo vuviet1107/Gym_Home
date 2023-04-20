@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:good_boy/constants/app_colors.dart';
+import 'package:good_boy/constants/app_dimens.dart';
 import 'package:good_boy/constants/app_styles.dart';
 
 class AuthButton extends StatelessWidget {
@@ -12,6 +13,7 @@ class AuthButton extends StatelessWidget {
     this.horizontal,
     this.width,
     this.height,
+    this.padding,
   }) : super(key: key);
 
   final String text;
@@ -21,6 +23,7 @@ class AuthButton extends StatelessWidget {
   final BorderRadiusGeometry? borderRadius;
   final double? width;
   final double? height;
+  final EdgeInsetsGeometry? padding;
 
   @override
   Widget build(BuildContext context) {
@@ -29,8 +32,8 @@ class AuthButton extends StatelessWidget {
       child: Container(
         width: width,
         height: height,
-        padding:
-            EdgeInsets.symmetric(horizontal: horizontal ?? 16, vertical: 16),
+        padding: padding,
+        // EdgeInsets.symmetric(horizontal: horizontal ?? 16, vertical: 16),
         decoration: BoxDecoration(
           borderRadius: borderRadius ?? BorderRadius.circular(16),
           color: buttonColor ?? AppColors.green5ED5A8,
@@ -40,7 +43,7 @@ class AuthButton extends StatelessWidget {
           text,
           style: AppStyles.textW400(
             context,
-            size: 18,
+            size: AppDimens.textSize15,
           ),
         ),
       ),

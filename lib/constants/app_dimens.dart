@@ -44,27 +44,33 @@ class AppDimens {
   static const textSize28 = 28.0;
   static const textSize30 = 30.0;
 
-  //Height
-  static final height10 = 10.h;
-  static final height12 = 12.h;
-  static final height14 = 14.h;
-  static final height15 = 15.h;
-  static final height16 = 16.h;
-  static final height18 = 18.h;
-  static final height20 = 20.h;
-  static final height22 = 22.h;
-  static final height24 = 24.h;
-  static final height28 = 28.h;
-  static final height30 = 30.h;
-  static final height130 = 130.h;
+  //screenHeight
+  static final screenHeight10 = 10.h;
+  static final screenHeight12 = 12.h;
+  static final screenHeight14 = 14.h;
+  static final screenHeight15 = 15.h;
+  static final screenHeight16 = 16.h;
+  static final screenHeight18 = 18.h;
+  static final screenHeight20 = 20.h;
+  static final screenHeight22 = 22.h;
+  static final screenHeight24 = 24.h;
+  static final screenHeight28 = 28.h;
+  static final screenHeight30 = 30.h;
+  static final screenHeight40 = 40.h;
+  static final screenHeight54 = 54.h;
+  static final screenHeight130 = 130.h;
+  static final screenHeight300 = 300.h;
 
-  //width
-  // static final double width157 = 157.w;
+  static final screenHeight360 = 360.h;
+
+  //screenWidth
+  static final double screenWidth157 = 157.w;
+  static final double screenWidth179 = 179.w;
 
   ///Width
-  static const  double width4 = 4;
+  static const double width4 = 4;
 
   ///Height
-  static const double height179 = 179;
   static const double height61 = 61;
+  static const double height179 = 179;
 }

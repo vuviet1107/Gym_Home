@@ -1,16 +1,24 @@
 import 'dart:async';
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController {
-  final count = 0.obs;
-  final RxBool check = false.obs;
+  late TextEditingController emailController,
+      passwordController,
+      enterThePasswordController,
+      nameCompanyController,
+      phoneCompanyController,
+      foundingDateController;
+
   @override
   void onInit() {
     super.onInit();
-    Timer.periodic(Duration(seconds: 1), ((timer) {
-      navigator();
-      timer.cancel();
-    }));
+    emailController = TextEditingController();
+    passwordController = TextEditingController();
+    enterThePasswordController = TextEditingController();
+    nameCompanyController = TextEditingController();
+    phoneCompanyController = TextEditingController();
+    foundingDateController = TextEditingController();
   }
 
   @override
@@ -21,19 +29,5 @@ class HomeController extends GetxController {
   @override
   void onClose() {
     super.onClose();
-  }
-
-  void increment() => count.value++;
-  navigator() {
-    // if (AppState.authenticated) {
-    //   Get.offAllNamed(
-    //     Routes.DASHBOARD,
-    //     arguments: {
-    //       'showPopup': true,
-    //     },
-    //   );
-    // } else {
-      // Get.offAllNamed(Routes.LOGIN);
-    // }
   }
 }

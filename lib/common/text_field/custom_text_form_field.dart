@@ -24,6 +24,7 @@ class CustomTextFormField extends StatefulWidget {
     this.focusedBorder,
     this.enabledBorder,
     this.errorBorder,
+    this.suffixIcon,
   }) : super(key: key);
 
   final String? hintText;
@@ -43,6 +44,7 @@ class CustomTextFormField extends StatefulWidget {
   final InputBorder? focusedBorder;
   final InputBorder? enabledBorder;
   final InputBorder? errorBorder;
+  final Widget? suffixIcon;
   bool obscureText = false;
 
   @override
@@ -53,6 +55,11 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      style: AppStyles.textW400(
+        context,
+        size: AppDimens.textSize16,
+        color: AppColors.whiteColor,
+      ),
       obscureText: widget.obscureText,
       readOnly: widget.readOnly,
       validator: widget.validator,
@@ -77,7 +84,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           color: AppColors.grey666666,
         ),
         suffixIcon: !widget.showSuffixIcon
-            ? null
+            ? widget.suffixIcon
             : IconButton(
                 icon: Icon(
                   widget.obscureText ? Icons.visibility : Icons.visibility_off,

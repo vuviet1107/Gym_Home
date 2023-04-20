@@ -1,4 +1,4 @@
-import 'package:good_boy/common/auth_button.dart';
+import 'package:good_boy/common/button/auth_button.dart';
 import 'package:good_boy/constants/app_colors.dart';
 import 'package:good_boy/constants/app_gap.dart';
 import 'package:good_boy/constants/app_styles.dart';
